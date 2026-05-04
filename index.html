@@ -1,39 +1,110 @@
-<!DOCTYPE html>
+html<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Professional | Cloud Goal</title>
+    <title>Sonbari Karanwi | Systems Administrator</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f4f4; }
-        .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #0078d4; } /* Azure Blue */
-        .job-title { font-weight: bold; color: #555; }
-        .cert-status { color: #d83b01; font-weight: bold; } /* Alert Orange */
+        :root { --azure-blue: #0078d4; --bg-gray: #f8f9fa; --text-dark: #201f1e; --accent-orange: #d83b01; }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; margin: 0; display: flex; min-height: 100vh; background: var(--bg-gray); color: var(--text-dark); }
+        
+        /* Sidebar */
+        .sidebar { width: 30%; background: #252423; color: white; padding: 40px 25px; box-sizing: border-box; position: sticky; top: 0; height: 100vh; }
+        .sidebar h1 { font-size: 28px; color: var(--azure-blue); margin: 0; }
+        .sidebar .subtitle { font-size: 14px; opacity: 0.8; margin-bottom: 30px; display: block; }
+        .sidebar h3 { border-bottom: 1px solid #444; padding-bottom: 5px; font-size: 16px; margin-top: 25px; text-transform: uppercase; letter-spacing: 1px; }
+        .sidebar ul { list-style: none; padding: 0; font-size: 14px; line-height: 1.8; }
+        .contact-link { color: white; text-decoration: none; display: block; margin-bottom: 10px; opacity: 0.9; }
+        .contact-link:hover { color: var(--azure-blue); }
+        .cert-badge { background: var(--accent-orange); color: white; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; display: inline-block; margin-top: 5px; }
+
+        /* Main Content */
+        .main-content { width: 70%; background: white; padding: 60px; box-sizing: border-box; }
+        .section { margin-bottom: 40px; }
+        .section h2 { font-size: 22px; color: var(--azure-blue); border-bottom: 2px solid var(--bg-gray); padding-bottom: 8px; margin-bottom: 20px; }
+        .job { margin-bottom: 30px; }
+        .job-header { display: flex; justify-content: space-between; font-weight: bold; font-size: 16px; }
+        .job-title { color: #666; font-style: italic; display: block; margin: 4px 0 10px 0; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; line-height: 1.5; }
+        .edu-item { margin-bottom: 15px; }
+
+        @media (max-width: 900px) { body { flex-direction: column; } .sidebar, .main-content { width: 100%; height: auto; position: static; } }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <div class="sidebar">
         <h1>Sonbari Karanwi</h1>
-        <p class="job-title">IT Support Specialist | Aspiring Cloud Administrator</p>
+        <span class="subtitle">Junior Systems Administrator</span>
         
-        <h3>Objective</h3>
-        <p>IT Support professional with 1 year of experience in Help Desk operations. Currently pursuing the <strong>AZ-900</strong> with a focus on transitioning into <strong>Azure Cloud Administration</strong>.</p>
+        <h3>Contact</h3>
+        <a class="contact-link" href="tel:8324808466">📞 832-480-8466</a>
+        <a class="contact-link" href="mailto:baritx2@gmail.com">📧 baritx2@gmail.com</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/sonbari-karanwi-699ab8252/" target="_blank">🔗 LinkedIn Profile</a>
 
         <h3>Certifications</h3>
-        <ul>
-            <li class="cert-status">Microsoft Certified: Azure Fundamentals (AZ-900) — [In Progress]</li>
-        </ul>
+        <div class="cert-badge">AZ-900 (In Progress)</div>
+        <p style="font-size: 13px; opacity: 0.8;">Currently building Azure Static Web App project to demonstrate Cloud competency.</p>
 
-        <h3>Technical Skills</h3>
+        <h3>Core Skills</h3>
         <ul>
-            <li><strong>Cloud:</strong> Microsoft Azure (Learning), GitHub (Version Control)</li>
-            <li><strong>Support:</strong> Active Directory, Office 365, Troubleshooting, Hardware</li>
-            <li><strong>Interests:</strong> Sports Technology & Stadium IT Operations</li>
+            <li><strong>Cloud:</strong> Entra ID, M365 Admin</li>
+            <li><strong>Systems:</strong> Active Directory (GPO), MECM/SCCM</li>
+            <li><strong>Virtualization:</strong> Hyper-V, VMware</li>
+            <li><strong>OS:</strong> Windows Server, Linux (Ubuntu/CentOS)</li>
+            <li><strong>Automation:</strong> PowerShell, Bash, SQL</li>
         </ul>
-
-        <h3>Projects</h3>
-        <p><strong>Cloud Resume Project:</strong> A live website hosted on Azure Static Web Apps, deployed automatically via GitHub Actions CI/CD pipeline.</p>
     </div>
+
+    <div class="main-content">
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <div class="job-header">
+                    <span>Full Dimension IT Solutions</span>
+                    <span>Sep. 2025 – Present</span>
+                </div>
+                <span class="job-title">IT Consultant / Junior Systems Administrator</span>
+                <ul>
+                    <li>Administer diverse Windows environments for <strong>80+ client organizations</strong>, managing multi-tenant infrastructure.</li>
+                    <li>Manage <strong>Active Directory and Entra ID</strong>, overseeing user lifecycle and GPO application.</li>
+                    <li>Support M365 tenants, resolving complex authentication issues and managing security groups.</li>
+                    <li>Proactively monitor system health using <strong>Atera RMM</strong> and Windows Server maintenance.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>Technology Services of Texas A&M</span>
+                    <span>May 2025 – Aug. 2025</span>
+                </div>
+                <span class="job-title">IT Intern</span>
+                <ul>
+                    <li>Provisioned Windows workstations via <strong>SCCM (MECM)</strong> ensuring 100% security compliance.</li>
+                    <li>Delivered Tier 1/2 support for hardware, software, and network connectivity issues.</li>
+                    <li>Authored Standard Operating Procedures (SOPs) for departmental IT onboarding.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="edu-item">
+                <strong>Texas A&M University</strong><br>
+                <span>Bachelor of Science: Technology Management; Minor: Business</span>
+            </div>
+            <div class="edu-item">
+                <strong>Houston City College</strong><br>
+                <span>Associate of Science: Computer Information Systems</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Cloud Project</h2>
+            <p><strong>Azure Resume Project:</strong> This live resume is hosted on <strong>Azure Static Web Apps</strong>. It utilizes <strong>GitHub Actions</strong> for CI/CD, demonstrating my ability to bridge traditional systems administration with modern Cloud/DevOps workflows.</p>
+        </div>
+    </div>
+
 </body>
 </html>
